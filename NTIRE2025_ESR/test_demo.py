@@ -28,10 +28,10 @@ def select_model(args, device):
         model = EFDN()
         model.load_state_dict(torch.load(model_path), strict=True)
     elif model_id == 8:
-        from models.team08_FRA import  FRA
+        from models.team08_FRnet import  FRnet
         name, data_range = f"{model_id:02}_FRA", 1.0
         model_path = os.path.join('model_zoo', 'team08_FRA.pth')
-        model =  FRA()
+        model =  FRnet()
         model.load_state_dict(torch.load(model_path)['params_ema'], strict=False)
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
