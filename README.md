@@ -24,7 +24,7 @@ The evaluation environments adopted by us is recorded in the `requirements.txt`.
 
 - Step1: Git clone this repository
 ````  
-git clone https://github.com/geiyu5/2025ESR
+git clone https://github.com/geiyu5/2025ESR.git
 ````
 - Step2: install Pytorch compatible to your GPU (in this case, we follow the environment setting for NTIRE 2025 ESR):(python3.9)
 ````  
