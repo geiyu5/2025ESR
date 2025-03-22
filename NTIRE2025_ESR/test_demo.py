@@ -30,7 +30,7 @@ def select_model(args, device):
     elif model_id == 8:
         from models.team08_FRnet import  FRnet
         name, data_range = f"{model_id:02}_FRA", 1.0
-        model_path = os.path.join('model_zoo', 'team08_FRA.pth')
+        model_path = os.path.join('model_zoo', 'team08_FRnet.pth')
         model =  FRnet()
         model.load_state_dict(torch.load(model_path)['params_ema'], strict=False)
     else:
