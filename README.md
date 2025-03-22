@@ -4,7 +4,13 @@
 <img src="https://github.com/Amazingren/NTIRE2025_ESR/blob/main/figs/logo.png" width="400px"/> 
 </div>
 
-#Our result: valid PSNR : 26.96dB,test PSNR : 27.05 ,FLOPs : 13.8547 [G], Params : 0.2116 [M], Average runtime of (valid) is : 12.624697 milliseconds on A6000
+## Our result:
+valid PSNR : 26.96dB
+test PSNR : 27.05 
+FLOPs : 13.8547 [G],
+Params : 0.2116 [M],
+Average runtime of (valid) is : 12.624697 milliseconds on A6000
+
 ## The Environments
 
 The evaluation environments adopted by us is recorded in the `requirements.txt`. After you built your own basic Python (Python = 3.9 in our setting) setup via either *virtual environment* or *anaconda*, please try to keep similar to it via:
@@ -14,7 +20,7 @@ The evaluation environments adopted by us is recorded in the `requirements.txt`.
 
 - Step1: Git clone this repository
 ````  
-git clone xxxxxxxxxxxxxxx
+git clone https://github.com/geiyu5/2025ESR
 ````
 - Step2: install Pytorch compatible to your GPU (in this case, we follow the environment setting for NTIRE 2025 ESR):(python3.9)
 ````  
@@ -32,7 +38,7 @@ The environment setting is kept as similar with [NTIRE2025 ESR](https://github.c
 After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://drive.google.com/file/d/1YUDrjUSMhhdx1s-O0I1qPa_HjW-S34Yj/view?usp=sharing) and [DIV2K_LSDIR_valid_HR](https://drive.google.com/file/d/1z1UtfewPatuPVTeAAzeTjhEGk4dg2i8v/view?usp=sharing)), please organize them as follows:
 
 ```
-|NTIRE2024_ESR_Challenge/
+|NTIRE2025_ESR_Challenge/
 |--DIV2K_LSDIR_valid_HR/
 |    |--000001.png
 |    |--000002.png
@@ -51,7 +57,7 @@ After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](http
 |    |--0802x4.png
 |    |--...
 |    |--0900.png
-|--NTIRE2024_ESR/
+|--NTIRE2025_ESR/
 |    |--...
 |    |--test_demo.py
 |    |--...
@@ -65,7 +71,7 @@ This shell script can be found in run.sh
 ```python
 # --- Evaluation on LSDIR_DIV2K_valid datasets for One Method: ---
  CUDA_VISIBLE_DEVICES=0 python test_demo.py \
-    --data_dir ./NTIRE2024_ESR_Challenge \
+    --data_dir ./NTIRE2025_ESR_Challenge \
     --save_dir ./NTIRE2025_ESR/results \
     --ssim \
     --model_id 08
