@@ -5,9 +5,9 @@
 </div>
 
 ## Our result:
-valid PSNR : 26.96dB
+Valid PSNR : 26.96dB
 
-test PSNR : 27.05
+Test PSNR : 27.05
 
 FLOPs : 13.8547 [G]
 
