@@ -90,7 +90,7 @@ class FRABlock(nn.Module):
         out = self.conv2(out)
         return out + x
 
-class FRA(nn.Module):
+class FRnet(nn.Module):
     def __init__(self, dim=36, n_blocks=6, ffn_scale=1.5, use_se=False, upscaling_factor=4):
         super().__init__()
         self.scale = upscaling_factor
