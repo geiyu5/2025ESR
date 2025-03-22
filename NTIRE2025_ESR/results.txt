@@ -1,0 +1,2 @@
+Model               	Val PSNR  	Val Time [ms] 	Params [M]	FLOPs [G] 	Acts [M]	Mem [M] 	Conv    
+08_FRA              	26.95     	12.62         	0.212     	13.85     	69.22   	375.88  	  32    
