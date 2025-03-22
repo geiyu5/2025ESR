@@ -19,12 +19,10 @@ class FRAM(nn.Module):
         self.initflag=False
         self.act = nn.GELU()
 
-    #串行卷积
     def transIII_conv_sequential(self,conv1, conv2):
         weight=F.conv2d(conv2.weight.data,conv1.weight.data.permute(1,0,2,3))
         return weight
     
-    #并行卷积
     def transII_conv_branch(self,conv1, conv2):
         weight=conv1.weight.data+conv2.weight.data
         return weight 
