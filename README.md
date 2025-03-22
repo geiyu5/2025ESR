@@ -5,11 +5,11 @@
 </div>
 
 ## Our result:
-valid PSNR : 26.96dB
-test PSNR : 27.05 
-FLOPs : 13.8547 [G],
-Params : 0.2116 [M],
-Average runtime of (valid) is : 12.624697 milliseconds on A6000
+#valid PSNR : 26.96dB
+#test PSNR : 27.05 
+#FLOPs : 13.8547 [G],
+#Params : 0.2116 [M],
+#Average runtime of (valid) is : 12.624697 milliseconds on A6000
 
 ## The Environments
 
@@ -91,7 +91,7 @@ This shell script can be found in run.sh
 #     --save_dir ./results \
 #     --include_test \
 #     --ssim \
-#     --model_id 10
+#     --model_id 08
 ```
 
 ## How to calculate the number of parameters, FLOPs, and activations
