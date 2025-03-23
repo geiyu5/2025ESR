@@ -1,4 +1,4 @@
-# Solution for (Team 08) Team mmSR: xxxxxxxxxxxxxxxxxx -- [NTIRE 2025 Challenge on Efficient Super-Resolution](https://cvlai.net/ntire/2025/)
+# Solution for (Team 08) Team mmSR: Efficient Feature Aggregation Network for Image Super-Resolution -- [NTIRE 2025 Challenge on Efficient Super-Resolution](https://cvlai.net/ntire/2025/)
 
 <div align=center>
 <img src="https://github.com/Amazingren/NTIRE2025_ESR/blob/main/figs/logo.png" width="400px"/> 
